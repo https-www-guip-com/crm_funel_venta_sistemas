@@ -19,6 +19,7 @@
     ],
     'depends': [ 'base_setup',
         'sales_team',
+        'sale',
         'mail',
         'calendar',
         'resource',

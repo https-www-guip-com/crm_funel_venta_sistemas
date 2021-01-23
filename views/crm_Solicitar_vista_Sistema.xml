@@ -132,9 +132,9 @@
             <tree string="Plataforma">
                     <field name="name" string="Oportunidades"/>
                     <field name="active"/>
-                    <field name="date_action_last" />
                     <field name="description"/>
                     <field name="email_from"/>
+                     <field name="stage_id"/>
                     <field name="priority" invisible="1"/>
             </tree>
         </field>

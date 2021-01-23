@@ -10,6 +10,24 @@ AVAILABLE_PRIORITIES = [
     ('3', 'Very High'),
 ]
 
+SECUENCIA_PRIORITIES = [
+    ('0', '1'),
+    ('1', '2'),
+    ('2', '3'),
+    ('3', '4'),
+    ('4', '5'),
+    ('5', '6'),
+    ('6', '7'),
+    ('7', '8'),
+    ('8', '9'),
+    ('9', '10'),
+    ('10', '11'),
+    ('11', '12'),
+    ('12', '13'),
+    ('13', '14'),
+    ('14', '15'),
+]
+
 
 class Etapas_flujo_Sistemas(models.Model):
     """ Model for case stages. This models the main stages of a document
@@ -20,10 +38,10 @@ class Etapas_flujo_Sistemas(models.Model):
     _name = "flujo_etapas_sistemas"
     _description = "Etapas Sistemas"
     _rec_name = 'name'
-    _order = "sequence, name, id"
+    _order = "sequence"
 
     name = fields.Char('Nombre Etapa', required=True, translate=True)
-    sequence = fields.Integer('Sequencia', default=1, help="Used to order stages. Lower is better.")
+    sequence = fields.Selection(SECUENCIA_PRIORITIES, string='Secuencia', index=True, default=SECUENCIA_PRIORITIES[0][0])
     probability = fields.Float('Probabilidad (%)', required=True, default=10.0, help="This percentage depicts the default/average probability of the Case for this stage to be a success")
     on_change = fields.Boolean('Change Probabilidad Automatically', help="Setting this stage will change the probability automatically on the opportunity.")
     requirements = fields.Text('Requirements', help="Enter here the internal requirements for this stage (ex: Offer sent to customer). It will appear as a tooltip over the stage's name.")

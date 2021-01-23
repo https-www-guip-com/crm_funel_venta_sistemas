@@ -7,8 +7,8 @@
         <field name="model">flujo_etapas_sistemas</field>
         <field name="arch" type="xml">
             <tree string="Stages">
-                <field name="sequence" widget="handle"/>
                 <field name="name"/>
+                <field name="sequence" />
                 <field name="probability"/>
             </tree>
         </field>

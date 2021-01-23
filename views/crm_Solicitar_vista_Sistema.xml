@@ -159,7 +159,7 @@
 
                 <field name="stage_id" 
                        widget="statusbar"
-                       options="{'fold_field': 'fold'}"
+                       options="{'clickable': '1', 'fold_field': 'fold'}"
                        />
 
 

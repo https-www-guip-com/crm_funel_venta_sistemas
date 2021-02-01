@@ -14,7 +14,6 @@
         'security/ir.model.access.csv',
         'views/crm_Solicitar_vista_Sistema.xml',
         'views/crm_etapas_sistemas.xml', 
-        'views/inherint_viex_operaciones.xml',
         'data/mail_template.xml',
     ],
     'depends': [ 'base_setup',

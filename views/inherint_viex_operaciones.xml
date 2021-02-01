@@ -8,7 +8,7 @@
         <field name="inherit_id" ref="crm_funel_venta_guip.data_crm_form"/>
         <field name="arch" type="xml">    
            
-            <field name="user_id" position="after">
+            <field name="sale_id" position="after">
                     <field name="operaciones_sistemas_id" />
             </field>
            

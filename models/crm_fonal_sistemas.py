@@ -63,7 +63,7 @@ class Crm_Fonel_Sistemas_Herencia(models.Model):
     phone = fields.Char('Telefono', track_visibility='onchange', track_sequence=5)
     mobile = fields.Char('Movil')
 
-    tag_ids = tag_ids = fields.Many2many('sistemas_lead_tag', string='Etiquetas', help="Classify and analyze your lead/opportunity categories like: Training, Service")
+    tag_ids = fields.Many2many('sistemas_lead_tag', string='Etiquetas', help="Classify and analyze your lead/opportunity categories like: Training, Service")
     #stage_id = fields.Many2one('flujo_etapas_sistemas', string='Etapa', ondelete='restrict', 
     #                            track_visibility='onchange', index=True, copy=False)
 

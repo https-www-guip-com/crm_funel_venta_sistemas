@@ -75,6 +75,11 @@
                                     <div>
                                         <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                                     </div>
+
+                                    <div>
+                                        Operador: <field name="user_id"/>
+                                    </div>
+
                                     <!--Icono que muestra las actividades -->
                                     <div class="o_kanban_record_bottom">
                                          <div class="oe_kanban_bottom_left">

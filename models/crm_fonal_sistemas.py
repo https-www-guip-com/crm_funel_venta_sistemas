@@ -75,7 +75,7 @@ class Crm_Fonel_Sistemas_Herencia(models.Model):
         track_visibility='onchange',
     )
 
-    user_id = fields.Many2one('res.users', string='Usuario Asignado', track_visibility='onchange')
+    user_id = fields.Many2one('res.users', string='Operador', track_visibility='onchange')
     
     vendedor_id = fields.Many2one('res.users', string='Vendedor Asignado', track_visibility='onchange')
     referred = fields.Char('Referido por')
